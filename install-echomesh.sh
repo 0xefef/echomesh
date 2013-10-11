@@ -18,6 +18,17 @@ cp -Rp "$SOURCE_DIR" "$TARGET_DIR"
 source "$BASH_CODE"/install-libraries.sh
 cp -Rp "$BASH_CODE"/echomesh "$TARGET_BIN_DIR"
 
+if [ $? -ne 0 ]
+then
+    echo 
+    echo "installation failed!"
+    echo "maybe try"
+    echo 
+    echo "    sudo ./install-echomesh.sh"
+    echo
+    exit 1
+fi
+
 echo
 echo "echomesh has been installed."
 echo "Open a terminal window and type:"
