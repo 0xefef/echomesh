@@ -25,6 +25,7 @@ apt-get install \
  mpg123 \
  oss-compat \
  python-httplib2 \
+ python-numpy \
  python-pip \
  python-pyaudio \
  python2.7-dev \
